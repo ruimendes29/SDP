@@ -1,0 +1,30 @@
+title: Paradigmas de Sistemas Distribuídos
+subtitle: CovidTracker
+logo: EEUM.png
+author:
+  - name: Hugo Carvalho
+    number: A85579
+    avatar: hugo.jpeg
+  - name: Nelson Estevão
+    number: A76434
+    avatar: nelson.jpeg
+  - name: Pedro Ribeiro
+    number: A85493
+    avatar: pedro.jpeg
+  - name: Ricardo Silva
+    number: A84123
+    avatar: ricardo.jpeg
+  - name: Rui Mendes
+    number: A83712
+    avatar: rui.jpeg
+keywords: [REST, Dropwizard, Erlang, ZeroMQ]
+lang: pt-PT
+fontsize: 11pt
+toc: true
+numbersections: true
+geometry: margin=2.5cm
+titlepage: true
+# pandoc-crossref
+secPrefix: [secção, secções]
+figPrefix: [figura, figuras]
+tblPrefix: [tabela, tabelas]

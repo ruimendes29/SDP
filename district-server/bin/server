@@ -1,0 +1,45 @@
+#!/usr/bin/env bash
+
+set -Eeuo pipefail
+
+BASE_DIR=$(dirname "${BASH_SOURCE[0]:-$0}")
+cd "${BASE_DIR}/.." || exit 127
+
+# shellcheck source=../scripts/helpers.sh
+. scripts/helpers.sh
+
+PROGRAM=$(basename "$0")
+VERSION=0.1.0
+
+function display_help() {
+  cat <<EOF
+    Usage:
+      ${PROGRAM} [options] [<program args>]
+
+    Options:
+      -h --help         Show this screen.
+      -v --version      Show version.
+      --no-compile      Skip compile step.
+EOF
+}
+
+case ${1:-compile} in
+  -h | --help)
+    display_help
+    ;;
+  -v | --version)
+    echo "${PROGRAM} script version ${VERSION}"
+    ;;
+  *)
+    case ${1:-compile} in
+      --no-compile)
+        shift 1
+        ;;
+      *)
+        bin/mvnw compile
+        ;;
+    esac
+
+    bin/mvnw exec:java -Dexec.args="$*"
+    ;;
+esac

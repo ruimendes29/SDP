@@ -1,0 +1,58 @@
+#!/usr/bin/env bash
+
+set -Eeuo pipefail
+
+BASE_DIR=$(dirname "${BASH_SOURCE[0]:-$0}")
+cd "${BASE_DIR}/.." || exit 127
+
+# shellcheck source=../scripts/helpers.sh
+. scripts/helpers.sh
+
+PROGRAM=$(basename "$0")
+VERSION=0.2.0
+
+function display_help() {
+  cat <<EOF
+    Usage:
+      ${PROGRAM} [options] [<command>]
+
+    Commands:
+      java   <- default value
+      api    (You need to start a server first).
+
+    Options:
+      -h --help         Show this screen.
+      -v --version      Show version.
+EOF
+}
+
+function running() {
+  case $1 in
+    java)
+      log_info "${FUNCNAME[0]} ${1} tests"
+      bin/mvnw test
+      log_success "${FUNCNAME[0]} ${1} tests"
+      ;;
+    api)
+      log_info "${FUNCNAME[0]} ${1} tests"
+      bash src/test/bash/api.sh
+      log_success "${FUNCNAME[0]} ${1} tests"
+      ;;
+  esac
+}
+
+case ${1:-java} in
+  -h | --help)
+    display_help
+    ;;
+  -v | --version)
+    echo "${PROGRAM} script version ${VERSION}"
+    ;;
+  java | api)
+    running ${1:-java}
+    ;;
+   *)
+    display_help >&2
+    exit 1
+    ;;
+esac

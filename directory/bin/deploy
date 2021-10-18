@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+. scripts/helpers.sh
+
+bin/mvnw package

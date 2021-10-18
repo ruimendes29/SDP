@@ -1,0 +1,38 @@
+server:
+  rootPath: /api/v1
+  applicationConnectors:
+    - type: http
+      port: ${APP_SERVER_PORT:-9090}
+  adminConnectors:
+    - type: http
+      port: ${ADMIN_HTTP_PORT:-9091}
+
+swagger:
+  resourcePackage: covidtracker.resources
+
+logging:
+  # Permit DEBUG, INFO, WARN and ERROR messages to be logged by appenders.
+  level: DEBUG
+
+  appenders:
+    # Log warnings and errors to stderr
+    - type: console
+      threshold: INFO
+#      threshold: WARN
+#      target: stderr
+
+    # Log info, warnings and errors to our apps' main log.
+    # Rolled over daily and retained for 5 days.
+    - type: file
+      threshold: INFO
+      currentLogFilename: ./logs/app.log
+      archivedLogFilenamePattern: ./logs/app-%d.log.gz
+      archivedFileCount: 5
+
+    # Log debug messages, info, warnings and errors to our apps' debug log.
+    # Rolled over hourly and retained for 6 hours
+    - type: file
+      threshold: DEBUG
+      currentLogFilename: ./logs/debug.log
+      archivedLogFilenamePattern: ./logs/debug-%d{yyyy-MM-dd-hh}.log.gz
+      archivedFileCount: 6

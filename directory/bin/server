@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+set -Eeuo pipefail
+
+BASE_DIR=$(dirname "${BASH_SOURCE[0]:-$0}")
+cd "${BASE_DIR}/.." || exit 127
+
+# shellcheck source=../scripts/helpers.sh
+. scripts/helpers.sh
+
+if [[ "${1:-compile}" == "--no-compile" ]]; then
+  shift 1
+else
+  bin/build
+fi
+
+CURRENT_VERSION=$(grep -oP '(?<=<version>).*(?=</version>)' pom.xml | head -1)
+ARTIFACT_NAME=$(grep -oP '(?<=<artifactId>).*(?=</artifactId>)' pom.xml | head -1)
+
+java -jar target/"${ARTIFACT_NAME}"-"${CURRENT_VERSION}".jar server config/development.yml

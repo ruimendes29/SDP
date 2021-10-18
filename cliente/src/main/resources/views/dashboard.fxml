@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="covidtracker.controller.Dashboard">
+   <children>
+      <VBox prefHeight="720.0" prefWidth="1080.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane prefHeight="720.0" prefWidth="1080.0">
+               <children>
+                  <VBox fx:id="mapa" layoutX="52.0" layoutY="83.0" prefHeight="500.0" prefWidth="440.0">
+                     <children>
+                        <HBox prefWidth="473.0">
+                           <children>
+                              <Rectangle fx:id="rect" arcHeight="5.0" arcWidth="5.0" fill="#d6cfa5" height="50.0" onMouseClicked="#changeLocation" opacity="0.4" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Rectangle fx:id="rect1" arcHeight="5.0" arcWidth="5.0" fill="#d6cfa5" height="50.0" onMouseClicked="#changeLocation" opacity="0.4" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Rectangle fx:id="rect2" arcHeight="5.0" arcWidth="5.0" fill="#d6cfa5" height="50.0" onMouseClicked="#changeLocation" opacity="0.4" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Rectangle fx:id="rect3" arcHeight="5.0" arcWidth="5.0" fill="#d6cfa5" height="50.0" onMouseClicked="#changeLocation" opacity="0.4" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Rectangle fx:id="rect4" arcHeight="5.0" arcWidth="5.0" fill="#d6cfa5" height="50.0" onMouseClicked="#changeLocation" opacity="0.4" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Rectangle fx:id="rect5" arcHeight="5.0" arcWidth="5.0" fill="#d6cfa5" height="50.0" onMouseClicked="#changeLocation" opacity="0.4" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Rectangle fx:id="rect6" arcHeight="5.0" arcWidth="5.0" fill="#d6cfa5" height="50.0" onMouseClicked="#changeLocation" opacity="0.4" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Rectangle fx:id="rect7" arcHeight="5.0" arcWidth="5.0" fill="#d6cfa5" height="50.0" onMouseClicked="#changeLocation" opacity="0.4" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Rectangle fx:id="rect8" arcHeight="5.0" arcWidth="5.0" fill="#d6cfa5" height="50.0" onMouseClicked="#changeLocation" opacity="0.4" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Rectangle fx:id="rect9" arcHeight="5.0" arcWidth="5.0" fill="#d6cfa5" height="50.0" onMouseClicked="#changeLocation" opacity="0.4" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                           </children>
+                        </HBox>
+                        <HBox prefWidth="473.0">
+                           <children>
+                              <Rectangle fx:id="rect1" arcHeight="5.0" arcWidth="5.0" fill="#d6cfa5" height="50.0" onMouseClicked="#changeLocation" opacity="0.4" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Rectangle fx:id="rect11" arcHeight="5.0" arcWidth="5.0" fill="#d6cfa5" height="50.0" onMouseClicked="#changeLocation" opacity="0.4" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Rectangle fx:id="rect21" arcHeight="5.0" arcWidth="5.0" fill="#d6cfa5" height="50.0" onMouseClicked="#changeLocation" opacity="0.4" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Rectangle fx:id="rect31" arcHeight="5.0" arcWidth="5.0" fill="#d6cfa5" height="50.0" onMouseClicked="#changeLocation" opacity="0.4" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Rectangle fx:id="rect41" arcHeight="5.0" arcWidth="5.0" fill="#d6cfa5" height="50.0" onMouseClicked="#changeLocation" opacity="0.4" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Rectangle fx:id="rect51" arcHeight="5.0" arcWidth="5.0" fill="#d6cfa5" height="50.0" onMouseClicked="#changeLocation" opacity="0.4" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Rectangle fx:id="rect61" arcHeight="5.0" arcWidth="5.0" fill="#d6cfa5" height="50.0" onMouseClicked="#changeLocation" opacity="0.4" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Rectangle fx:id="rect71" arcHeight="5.0" arcWidth="5.0" fill="#d6cfa5" height="50.0" onMouseClicked="#changeLocation" opacity="0.4" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Rectangle fx:id="rect81" arcHeight="5.0" arcWidth="5.0" fill="#d6cfa5" height="50.0" onMouseClicked="#changeLocation" opacity="0.4" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Rectangle fx:id="rect91" arcHeight="5.0" arcWidth="5.0" fill="#d6cfa5" height="50.0" onMouseClicked="#changeLocation" opacity="0.4" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                           </children>
+                        </HBox>
+                        <HBox prefWidth="473.0">
+                           <children>
+                              <Rectangle fx:id="rect1" arcHeight="5.0" arcWidth="5.0" fill="#d6cfa5" height="50.0" onMouseClicked="#changeLocation" opacity="0.4" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Rectangle fx:id="rect12" arcHeight="5.0" arcWidth="5.0" fill="#d6cfa5" height="50.0" onMouseClicked="#changeLocation" opacity="0.4" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Rectangle fx:id="rect22" arcHeight="5.0" arcWidth="5.0" fill="#d6cfa5" height="50.0" onMouseClicked="#changeLocation" opacity="0.4" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Rectangle fx:id="rect32" arcHeight="5.0" arcWidth="5.0" fill="#d6cfa5" height="50.0" onMouseClicked="#changeLocation" opacity="0.4" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Rectangle fx:id="rect42" arcHeight="5.0" arcWidth="5.0" fill="#d6cfa5" height="50.0" onMouseClicked="#changeLocation" opacity="0.4" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Rectangle fx:id="rect52" arcHeight="5.0" arcWidth="5.0" fill="#d6cfa5" height="50.0" onMouseClicked="#changeLocation" opacity="0.4" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Rectangle fx:id="rect62" arcHeight="5.0" arcWidth="5.0" fill="#d6cfa5" height="50.0" onMouseClicked="#changeLocation" opacity="0.4" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Rectangle fx:id="rect72" arcHeight="5.0" arcWidth="5.0" fill="#d6cfa5" height="50.0" onMouseClicked="#changeLocation" opacity="0.4" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Rectangle fx:id="rect82" arcHeight="5.0" arcWidth="5.0" fill="#d6cfa5" height="50.0" onMouseClicked="#changeLocation" opacity="0.4" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Rectangle fx:id="rect92" arcHeight="5.0" arcWidth="5.0" fill="#d6cfa5" height="50.0" onMouseClicked="#changeLocation" opacity="0.4" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                           </children>
+                        </HBox>
+                        <HBox prefWidth="473.0">
+                           <children>
+                              <Rectangle fx:id="rect1" arcHeight="5.0" arcWidth="5.0" fill="#d6cfa5" height="50.0" onMouseClicked="#changeLocation" opacity="0.4" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Rectangle fx:id="rect13" arcHeight="5.0" arcWidth="5.0" fill="#d6cfa5" height="50.0" onMouseClicked="#changeLocation" opacity="0.4" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Rectangle fx:id="rect23" arcHeight="5.0" arcWidth="5.0" fill="#d6cfa5" height="50.0" onMouseClicked="#changeLocation" opacity="0.4" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Rectangle fx:id="rect33" arcHeight="5.0" arcWidth="5.0" fill="#d6cfa5" height="50.0" onMouseClicked="#changeLocation" opacity="0.4" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Rectangle fx:id="rect43" arcHeight="5.0" arcWidth="5.0" fill="#d6cfa5" height="50.0" onMouseClicked="#changeLocation" opacity="0.4" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Rectangle fx:id="rect53" arcHeight="5.0" arcWidth="5.0" fill="#d6cfa5" height="50.0" onMouseClicked="#changeLocation" opacity="0.4" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Rectangle fx:id="rect63" arcHeight="5.0" arcWidth="5.0" fill="#d6cfa5" height="50.0" onMouseClicked="#changeLocation" opacity="0.4" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Rectangle fx:id="rect73" arcHeight="5.0" arcWidth="5.0" fill="#d6cfa5" height="50.0" onMouseClicked="#changeLocation" opacity="0.4" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Rectangle fx:id="rect83" arcHeight="5.0" arcWidth="5.0" fill="#d6cfa5" height="50.0" onMouseClicked="#changeLocation" opacity="0.4" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Rectangle fx:id="rect93" arcHeight="5.0" arcWidth="5.0" fill="#d6cfa5" height="50.0" onMouseClicked="#changeLocation" opacity="0.4" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                           </children>
+                        </HBox>
+                        <HBox prefWidth="473.0">
+                           <children>
+                              <Rectangle fx:id="rect1" arcHeight="5.0" arcWidth="5.0" fill="#d6cfa5" height="50.0" onMouseClicked="#changeLocation" opacity="0.4" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Rectangle fx:id="rect14" arcHeight="5.0" arcWidth="5.0" fill="#d6cfa5" height="50.0" onMouseClicked="#changeLocation" opacity="0.4" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Rectangle fx:id="rect24" arcHeight="5.0" arcWidth="5.0" fill="#d6cfa5" height="50.0" onMouseClicked="#changeLocation" opacity="0.4" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Rectangle fx:id="rect34" arcHeight="5.0" arcWidth="5.0" fill="#d6cfa5" height="50.0" onMouseClicked="#changeLocation" opacity="0.4" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Rectangle fx:id="rect44" arcHeight="5.0" arcWidth="5.0" fill="#d6cfa5" height="50.0" onMouseClicked="#changeLocation" opacity="0.4" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Rectangle fx:id="rect54" arcHeight="5.0" arcWidth="5.0" fill="#d6cfa5" height="50.0" onMouseClicked="#changeLocation" opacity="0.4" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Rectangle fx:id="rect64" arcHeight="5.0" arcWidth="5.0" fill="#d6cfa5" height="50.0" onMouseClicked="#changeLocation" opacity="0.4" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Rectangle fx:id="rect74" arcHeight="5.0" arcWidth="5.0" fill="#d6cfa5" height="50.0" onMouseClicked="#changeLocation" opacity="0.4" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Rectangle fx:id="rect84" arcHeight="5.0" arcWidth="5.0" fill="#d6cfa5" height="50.0" onMouseClicked="#changeLocation" opacity="0.4" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Rectangle fx:id="rect94" arcHeight="5.0" arcWidth="5.0" fill="#d6cfa5" height="50.0" onMouseClicked="#changeLocation" opacity="0.4" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                           </children>
+                        </HBox>
+                        <HBox prefWidth="473.0">
+                           <children>
+                              <Rectangle fx:id="rect1" arcHeight="5.0" arcWidth="5.0" fill="#d6cfa5" height="50.0" onMouseClicked="#changeLocation" opacity="0.4" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Rectangle fx:id="rect15" arcHeight="5.0" arcWidth="5.0" fill="#d6cfa5" height="50.0" onMouseClicked="#changeLocation" opacity="0.4" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Rectangle fx:id="rect25" arcHeight="5.0" arcWidth="5.0" fill="#d6cfa5" height="50.0" onMouseClicked="#changeLocation" opacity="0.4" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Rectangle fx:id="rect35" arcHeight="5.0" arcWidth="5.0" fill="#d6cfa5" height="50.0" onMouseClicked="#changeLocation" opacity="0.4" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Rectangle fx:id="rect45" arcHeight="5.0" arcWidth="5.0" fill="#d6cfa5" height="50.0" onMouseClicked="#changeLocation" opacity="0.4" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Rectangle fx:id="rect55" arcHeight="5.0" arcWidth="5.0" fill="#d6cfa5" height="50.0" onMouseClicked="#changeLocation" opacity="0.4" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Rectangle fx:id="rect65" arcHeight="5.0" arcWidth="5.0" fill="#d6cfa5" height="50.0" onMouseClicked="#changeLocation" opacity="0.4" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Rectangle fx:id="rect75" arcHeight="5.0" arcWidth="5.0" fill="#d6cfa5" height="50.0" onMouseClicked="#changeLocation" opacity="0.4" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Rectangle fx:id="rect85" arcHeight="5.0" arcWidth="5.0" fill="#d6cfa5" height="50.0" onMouseClicked="#changeLocation" opacity="0.4" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Rectangle fx:id="rect95" arcHeight="5.0" arcWidth="5.0" fill="#d6cfa5" height="50.0" onMouseClicked="#changeLocation" opacity="0.4" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                           </children>
+                        </HBox>
+                        <HBox prefWidth="473.0">
+                           <children>
+                              <Rectangle fx:id="rect1" arcHeight="5.0" arcWidth="5.0" fill="#d6cfa5" height="50.0" onMouseClicked="#changeLocation" opacity="0.4" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Rectangle fx:id="rect16" arcHeight="5.0" arcWidth="5.0" fill="#d6cfa5" height="50.0" onMouseClicked="#changeLocation" opacity="0.4" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Rectangle fx:id="rect26" arcHeight="5.0" arcWidth="5.0" fill="#d6cfa5" height="50.0" onMouseClicked="#changeLocation" opacity="0.4" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Rectangle fx:id="rect36" arcHeight="5.0" arcWidth="5.0" fill="#d6cfa5" height="50.0" onMouseClicked="#changeLocation" opacity="0.4" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Rectangle fx:id="rect46" arcHeight="5.0" arcWidth="5.0" fill="#d6cfa5" height="50.0" onMouseClicked="#changeLocation" opacity="0.4" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Rectangle fx:id="rect56" arcHeight="5.0" arcWidth="5.0" fill="#d6cfa5" height="50.0" onMouseClicked="#changeLocation" opacity="0.4" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Rectangle fx:id="rect66" arcHeight="5.0" arcWidth="5.0" fill="#d6cfa5" height="50.0" onMouseClicked="#changeLocation" opacity="0.4" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Rectangle fx:id="rect76" arcHeight="5.0" arcWidth="5.0" fill="#d6cfa5" height="50.0" onMouseClicked="#changeLocation" opacity="0.4" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Rectangle fx:id="rect86" arcHeight="5.0" arcWidth="5.0" fill="#d6cfa5" height="50.0" onMouseClicked="#changeLocation" opacity="0.4" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Rectangle fx:id="rect96" arcHeight="5.0" arcWidth="5.0" fill="#d6cfa5" height="50.0" onMouseClicked="#changeLocation" opacity="0.4" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                           </children>
+                        </HBox>
+                        <HBox prefWidth="473.0">
+                           <children>
+                              <Rectangle fx:id="rect1" arcHeight="5.0" arcWidth="5.0" fill="#d6cfa5" height="50.0" onMouseClicked="#changeLocation" opacity="0.4" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Rectangle fx:id="rect17" arcHeight="5.0" arcWidth="5.0" fill="#d6cfa5" height="50.0" onMouseClicked="#changeLocation" opacity="0.4" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Rectangle fx:id="rect27" arcHeight="5.0" arcWidth="5.0" fill="#d6cfa5" height="50.0" onMouseClicked="#changeLocation" opacity="0.4" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Rectangle fx:id="rect37" arcHeight="5.0" arcWidth="5.0" fill="#d6cfa5" height="50.0" onMouseClicked="#changeLocation" opacity="0.4" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Rectangle fx:id="rect47" arcHeight="5.0" arcWidth="5.0" fill="#d6cfa5" height="50.0" onMouseClicked="#changeLocation" opacity="0.4" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Rectangle fx:id="rect57" arcHeight="5.0" arcWidth="5.0" fill="#d6cfa5" height="50.0" onMouseClicked="#changeLocation" opacity="0.4" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Rectangle fx:id="rect67" arcHeight="5.0" arcWidth="5.0" fill="#d6cfa5" height="50.0" onMouseClicked="#changeLocation" opacity="0.4" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Rectangle fx:id="rect77" arcHeight="5.0" arcWidth="5.0" fill="#d6cfa5" height="50.0" onMouseClicked="#changeLocation" opacity="0.4" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Rectangle fx:id="rect87" arcHeight="5.0" arcWidth="5.0" fill="#d6cfa5" height="50.0" onMouseClicked="#changeLocation" opacity="0.4" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Rectangle fx:id="rect97" arcHeight="5.0" arcWidth="5.0" fill="#d6cfa5" height="50.0" onMouseClicked="#changeLocation" opacity="0.4" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                           </children>
+                        </HBox>
+                        <HBox prefWidth="473.0">
+                           <children>
+                              <Rectangle fx:id="rect1" arcHeight="5.0" arcWidth="5.0" fill="#d6cfa5" height="50.0" onMouseClicked="#changeLocation" opacity="0.4" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Rectangle fx:id="rect18" arcHeight="5.0" arcWidth="5.0" fill="#d6cfa5" height="50.0" onMouseClicked="#changeLocation" opacity="0.4" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Rectangle fx:id="rect28" arcHeight="5.0" arcWidth="5.0" fill="#d6cfa5" height="50.0" onMouseClicked="#changeLocation" opacity="0.4" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Rectangle fx:id="rect38" arcHeight="5.0" arcWidth="5.0" fill="#d6cfa5" height="50.0" onMouseClicked="#changeLocation" opacity="0.4" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Rectangle fx:id="rect48" arcHeight="5.0" arcWidth="5.0" fill="#d6cfa5" height="50.0" onMouseClicked="#changeLocation" opacity="0.4" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Rectangle fx:id="rect58" arcHeight="5.0" arcWidth="5.0" fill="#d6cfa5" height="50.0" onMouseClicked="#changeLocation" opacity="0.4" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Rectangle fx:id="rect68" arcHeight="5.0" arcWidth="5.0" fill="#d6cfa5" height="50.0" onMouseClicked="#changeLocation" opacity="0.4" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Rectangle fx:id="rect78" arcHeight="5.0" arcWidth="5.0" fill="#d6cfa5" height="50.0" onMouseClicked="#changeLocation" opacity="0.4" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Rectangle fx:id="rect88" arcHeight="5.0" arcWidth="5.0" fill="#d6cfa5" height="50.0" onMouseClicked="#changeLocation" opacity="0.4" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Rectangle fx:id="rect98" arcHeight="5.0" arcWidth="5.0" fill="#d6cfa5" height="50.0" onMouseClicked="#changeLocation" opacity="0.4" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                           </children>
+                        </HBox>
+                        <HBox prefWidth="473.0">
+                           <children>
+                              <Rectangle fx:id="rect1" arcHeight="5.0" arcWidth="5.0" fill="#d6cfa5" height="50.0" onMouseClicked="#changeLocation" opacity="0.4" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Rectangle fx:id="rect19" arcHeight="5.0" arcWidth="5.0" fill="#d6cfa5" height="50.0" onMouseClicked="#changeLocation" opacity="0.4" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Rectangle fx:id="rect29" arcHeight="5.0" arcWidth="5.0" fill="#d6cfa5" height="50.0" onMouseClicked="#changeLocation" opacity="0.4" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Rectangle fx:id="rect39" arcHeight="5.0" arcWidth="5.0" fill="#d6cfa5" height="50.0" onMouseClicked="#changeLocation" opacity="0.4" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Rectangle fx:id="rect49" arcHeight="5.0" arcWidth="5.0" fill="#d6cfa5" height="50.0" onMouseClicked="#changeLocation" opacity="0.4" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Rectangle fx:id="rect59" arcHeight="5.0" arcWidth="5.0" fill="#d6cfa5" height="50.0" onMouseClicked="#changeLocation" opacity="0.4" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Rectangle fx:id="rect69" arcHeight="5.0" arcWidth="5.0" fill="#d6cfa5" height="50.0" onMouseClicked="#changeLocation" opacity="0.4" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Rectangle fx:id="rect79" arcHeight="5.0" arcWidth="5.0" fill="#d6cfa5" height="50.0" onMouseClicked="#changeLocation" opacity="0.4" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Rectangle fx:id="rect89" arcHeight="5.0" arcWidth="5.0" fill="#d6cfa5" height="50.0" onMouseClicked="#changeLocation" opacity="0.4" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Rectangle fx:id="rect99" arcHeight="5.0" arcWidth="5.0" fill="#d6cfa5" height="50.0" onMouseClicked="#changeLocation" opacity="0.4" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <Text layoutX="52.0" layoutY="607.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Left click to change your location, right click to get the number of people in a location" textAlignment="CENTER" wrappingWidth="500.0000000000001" />
+                  <Text layoutX="850.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Information from servers:" textAlignment="CENTER" wrappingWidth="225.0" />
+                  <VBox layoutX="613.0" layoutY="172.0" prefHeight="119.0" prefWidth="149.0" spacing="20.0">
+                     <children>
+                        <ComboBox fx:id="d1" onAction="#subscribeToDistrict" prefWidth="150.0" />
+                        <ComboBox fx:id="d2" onAction="#subscribeToDistrict" prefWidth="150.0" />
+                        <ComboBox fx:id="d3" onAction="#subscribeToDistrict" prefWidth="150.0" />
+                     </children>
+                  </VBox>
+                  <Text layoutX="617.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Subscribe to districts:" />
+                  <Text layoutX="424.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Covid Tracker">
+                     <font>
+                        <Font size="37.0" />
+                     </font>
+                  </Text>
+                  <HBox fx:id="options" alignment="CENTER" layoutX="552.0" layoutY="402.0" prefHeight="223.0" prefWidth="516.0" />
+                  <HBox fx:id="informations" layoutX="850.0" layoutY="115.0" prefHeight="232.0" prefWidth="225.0" />
+                  <Button layoutX="937.0" layoutY="347.0" mnemonicParsing="false" onAction="#clearText" text="Clear" />
+                  <Button layoutX="613.0" layoutY="347.0" mnemonicParsing="false" onAction="#setInfected" prefHeight="26.0" prefWidth="149.0" text="Notify Infection" textAlignment="CENTER" textFill="#dd0202" />
+               </children>
+            </AnchorPane>
+            <ButtonBar prefHeight="26.0" prefWidth="1080.0">
+              <buttons>
+                <Button mnemonicParsing="false" onAction="#gotoStatistics" text="Statistics" />
+                  <Button mnemonicParsing="false" onAction="#logout" text="Logout" textFill="#dd0202" />
+              </buttons>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </ButtonBar>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

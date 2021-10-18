@@ -1,0 +1,61 @@
+#!/usr/bin/env bash
+
+set -Eeuo pipefail
+
+BASE_DIR=$(dirname "${BASH_SOURCE[0]:-$0}")
+cd "${BASE_DIR}/.." || exit 127
+
+# shellcheck source=../scripts/helpers.sh
+. scripts/helpers.sh
+
+PROGRAM=$(basename "$0")
+VERSION=0.2.0
+
+function display_help() {
+  cat <<EOF
+    Usage:
+      ${PROGRAM} [options] [<command>]
+
+    Commands:
+      java   <- default value
+      shell
+
+    Options:
+      -h --help         Show this screen.
+      -v --version      Show version.
+EOF
+}
+
+function format() {
+  case $1 in
+    shell)
+      log_info "${FUNCNAME[0]} ${1} scripts"
+      shfmt -i 2 -ci -s -w -f .
+      log_success "${FUNCNAME[0]} ${1} scripts"
+      ;;
+    java)
+      log_info "${FUNCNAME[0]} ${1} files"
+      bin/mvnw fmt:format
+      log_success "${FUNCNAME[0]} ${1} files"
+      ;;
+  esac
+}
+
+case ${1:-java} in
+  -h | --help)
+    display_help
+    ;;
+  -v | --version)
+    echo "${PROGRAM} script version ${VERSION}"
+    ;;
+  shell | bash | sh | scripts)
+    format shell
+    ;;
+  java)
+    format java
+    ;;
+   *)
+    display_help >&2
+    exit 1
+    ;;
+esac

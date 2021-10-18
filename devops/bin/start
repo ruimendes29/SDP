@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+if [ ! "${1:-compile}" = "--no-compile" ]; then
+  client/bin/setup
+  client/bin/build
+  district-server/bin/setup
+  district-server/bin/build
+  directory/bin/setup
+  directory/bin/build
+  cd frontend-server || exit
+  bin/build
+  cd .. || exit
+fi
+
+tmuxinator local

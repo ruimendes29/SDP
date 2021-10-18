@@ -1,0 +1,42 @@
+name: psd
+root: <%= ENV["PWD"] %>
+
+startup_window: shell
+
+windows:
+  - shell:
+      layout: main-vertical
+      panes:
+        -
+  - client:
+      root: <%= ENV["PWD"] %>/client
+      layout: main-vertical
+      panes:
+        - start:
+            - sleep 20
+            - bin/run
+  - district-server:
+      root: <%= ENV["PWD"] %>/district-server
+      layout: tiled
+      panes:
+        - porto:
+            - sleep 5
+            - bin/server --no-compile -n porto
+        - braga:
+            - sleep 5
+            - bin/server --no-compile -n braga
+        - lisboa:
+            - sleep 5
+            - bin/server --no-compile -n lisboa
+  - frontend-server:
+      root: <%= ENV["PWD"] %>/frontend-server
+      layout: main-vertical
+      panes:
+        - start:
+            - sleep 20
+            - APP_CONFIG_FILE=config/dev_config.erl bin/server
+  - directory:
+      root: <%= ENV["PWD"] %>/directory
+      layout: tiled
+      panes:
+        - bin/server --no-compile
